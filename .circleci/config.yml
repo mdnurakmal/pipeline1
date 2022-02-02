@@ -13,7 +13,7 @@ jobs:
 
     steps:
 
-      - check_local:
+      - gitleaks/check_local:
         path: ~/repo
 
 

@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - checkout
-      - gitleaks/check_local
+      - gitleaks/check_local --path .
 
 
   build:

@@ -50,4 +50,4 @@ workflows:
       - git-secret/install_and_decrypt
       - build:
           requires:
-              - scan
+              - git-secret/install_and_decrypt

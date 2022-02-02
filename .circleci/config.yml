@@ -5,6 +5,10 @@ orbs:
   gitleaks: upenn-libraries/gitleaks@1.0.0
 jobs:
 
+  scan:
+    - gitleaks/check_local
+        path: ~/repo
+
   build:
 
 
@@ -52,6 +56,6 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - gitleaks/check_local
+      - scan
       - build
    

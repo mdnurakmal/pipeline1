@@ -64,5 +64,5 @@ workflows:
     jobs:
       - scan
       - build:
-          require: scan
+        require: scan
    

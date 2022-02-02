@@ -3,10 +3,6 @@ orbs:
   node: circleci/node@5.0.0
   codecov: codecov/codecov@3.2.2
   gitleaks: upenn-libraries/gitleaks@1.0.0
-  workflows:
-    check_for_secrets:
-      jobs:
-        - gitleaks/check_local
 jobs:
 
   build:
@@ -51,5 +47,6 @@ workflows:
   version: 2
   build_and_test:
     jobs:
+      - gitleaks/check_local
       - build
    

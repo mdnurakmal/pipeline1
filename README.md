@@ -1,5 +1,7 @@
 # DevSecOps pipeline for ReactJS based project 
 
+NETLIFY_AUTH_TOKEN=H4rke65wHAn-BfQhJJRJwCt-asl56px6LV66eug-y2Q
+
 [![codecov](https://codecov.io/gh/mdnurakmal/react-cicd-1/branch/main/graph/badge.svg?token=U03ASER0MO)](https://codecov.io/gh/mdnurakmal/react-cicd-1)
 [![CircleCI](https://circleci.com/gh/mdnurakmal/pipeline1/tree/main.svg?style=svg)](https://circleci.com/gh/mdnurakmal/pipeline1/tree/main)
 

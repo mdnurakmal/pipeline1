@@ -13,8 +13,8 @@ jobs:
       # start proprietary DB using private Docker image
       # with credentials stored in the UI
       - run: |
-          curl -s  https://api.github.com/repos/zricethezav/gitleaks/releases/latest | grep browser_download_url  |  cut -d '"' -f 4  | grep '\linux-amd64$'| wget -i -
-          mv gitleaks-linux-amd64 gitleaks
+          wget https://github.com/zricethezav/gitleaks/releases/download/v8.2.7/gitleaks_8.2.7_linux_x64.tar.gzls
+          tar xf gitleaks_8.2.7_linux_x64.tar.gz
           chmod +x gitleaks
           sudo mv gitleaks /usr/local/bin/
           gitleaks --version

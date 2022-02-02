@@ -2,8 +2,11 @@
 
 
 
-[![codecov](https://codecov.io/gh/mdnurakmal/react-cicd-1/branch/main/graph/badge.svg?token=U03ASER0MO)](https://codecov.io/gh/mdnurakmal/react-cicd-1)
+[![codecov](https://codecov.io/gh/mdnurakmal/react-cicd-1/branch/main/graph/badge.svg?token=U03ASER0MO)](https://codecov.io/gh/mdnurakmal/pipeline1)
 [![CircleCI](https://circleci.com/gh/mdnurakmal/pipeline1/tree/main.svg?style=svg)](https://circleci.com/gh/mdnurakmal/pipeline1/tree/main)
+[![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg)]
+
+(https://snyk.io/test/github/mdnurakmal/pipeline1)
 
 
 * IDE - Visual Studio Code
@@ -27,7 +30,7 @@
 * Environment - Netlify
 * Code Coverage  - CodeCov
 * Dependency Management - N/A
-* Security Scanning - N/A
+* Security Scanning - snyk
 
 * Collaboration : Slack
 * Logging : logstash

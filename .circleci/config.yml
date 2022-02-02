@@ -6,13 +6,17 @@ orbs:
 jobs:
 
   scan:
-    docker:
-      - image: circleci/python:latest
-    working_directory: ~/repo
+    machine: true
     steps:
       - checkout
-      - run: pip install pre-commit
-      - run: pre-commit run --all-files
+      # start proprietary DB using private Docker image
+      # with credentials stored in the UI
+      - run: |
+          git clone https://github.com/zricethezav/gitleaks.git
+          cd gitleaks
+          make build
+
+
 
 
   build:

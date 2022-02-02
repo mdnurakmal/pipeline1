@@ -6,7 +6,14 @@ orbs:
 jobs:
 
   scan:
-    - gitleaks/check_local
+    docker:
+      -image: 'quay.io/upennlibraries/gitleaks:v1.23.0'
+    
+    working_directory: ~/repo
+
+    steps:
+
+      - gitleaks/check_local
 
 
   build:

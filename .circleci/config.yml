@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.0
   codecov: codecov/codecov@3.2.2
-  gg-shield: gitguardian/ggshield
+  ggshield: gitguardian/ggshield
 jobs:
 
 
@@ -50,7 +50,7 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - gg-shield/scan:
+      - ggshield/scan:
           name: gg-shield-scan # best practice is to name each orb job
           base_revision: << pipeline.git.base_revision >>
           revision: <<pipeline.git.revision>>

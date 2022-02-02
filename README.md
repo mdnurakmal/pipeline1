@@ -1,37 +1,46 @@
-
 # DevSecOps pipeline for ReactJS based project 
 
-IDE - Visual Studio Code
-IDE Scanner - Snyk Vulnerability Scanner
-CICD - Circle.CI
-Pre-commit hook - talisman
-Orchestration - N/A
-SCM - Github
-Artifact repository - N/A
-Compliance Scanning - N/A
-Secret check - trufflehog
-SCA - safety
-SAST - bandit
-CVA / CSA - N/A
-Container Audit - N/A
-DAST - nikto for scans, selenium-chrome for grabbing session cookie
-Security Audit - lynis
-WAF - N/A
-Environment - Netlify
+[![codecov](https://codecov.io/gh/mdnurakmal/react-cicd-1/branch/main/graph/badge.svg?token=U03ASER0MO)](https://codecov.io/gh/mdnurakmal/react-cicd-1)
 
+* IDE - Visual Studio Code
+* IDE Scanner - Snyk Vulnerability Scanner
+* CICD - Circle.CI
+* Pre-commit hook - talisman
+* Orchestration - N/A
+* SCM - Github
+* Artifact repository - N/A
+* Compliance Scanning - N/A
+* Secret check - trufflehog
+* SCA - safety
+* SAST - bandit
+* CVA / CSA - N/A
+* Container Audit - N/A
+* DAST - nikto for scans, selenium-chrome for grabbing session cookie
+* Security Audit - lynis
+* Threat Detection - N/A
+* SIEM & SOAR - N/A
+* WAF - N/A
+* Environment - Netlify
+* Code Coverage  - CodeCov
+* Dependency Management - N/A
+* Security Scanning - N/A
 
-Collaboration : Slack
-Logging : 
+* Collaboration : Slack
+* Logging : logstash
+* Visualization : grafana , kibana
+* Monitor:
+* Plan: Jira
 
+# Acronym
 SCM : Source Code Mangement
 SCA : Software Composition Analysis
 SAST : Static Analysis Security Testing
 DAST  : Dynamic Analysis and Security Testin
-
+CSA : Container Security Analysis
+CVA : Container Vulnerability Analysis
 
 IDE Scanner -> Github -> Pre-commit hook -> Unit Test -> Code Coverage -> Static analysis -> Static Analysis Security Testing / Vulnerability Scan ->  -> Build - >  -> Slack -> - > Deploy >Monitor
 
-logstash , grafana
 
 Vulnerability Assessment (prod server) -> Dynamic code analysis -> Infrastructure scanning -> Infra compliance check
 
@@ -52,8 +61,6 @@ Dynamic Analysis Security Testing
 Artifact storage
 
 SonarLint real-time analaysis
-
-Talisman - https://github.com/thoughtworks/talisman
 
 2 repo
 

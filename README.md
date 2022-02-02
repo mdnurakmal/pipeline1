@@ -9,12 +9,12 @@
 * IDE - Visual Studio Code
 * IDE Scanner - Snyk Vulnerability Scanner
 * CICD - Circle.CI
-* Pre-commit hook - talisman
+* Pre-commit hook - N/A
 * Orchestration - N/A
 * SCM - Github
 * Artifact repository - N/A
 * Compliance Scanning - N/A
-* Secret check - trufflehog
+* Secret check - GitGuardian
 * SCA - safety
 * SAST - bandit
 * CVA / CSA - N/A

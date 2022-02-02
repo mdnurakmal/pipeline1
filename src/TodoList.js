@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AddTaskForm from "./AddTaskForm";
 import "./TodoList.css";
-NETLIFY_AUTH_TOKEN=H4rke65wHAn-BfQhJJRJwCt-asl56px6LV66eug-y2Q
+
 const ToDoList = () => {
   const [tasks, setTasks] = useState([
     {

@@ -4567,6 +4567,11 @@
     "strip-ansi" "^6.0.0"
     "wrap-ansi" "^7.0.0"
 
+"clogy@^1.3.3":
+  "integrity" "sha1-QTqz38vZIfZO7gGhSpbmph3ytkw="
+  "resolved" "https://registry.npmjs.org/clogy/-/clogy-1.3.3.tgz"
+  "version" "1.3.3"
+
 "clone-deep@^0.2.4":
   "integrity" "sha1-TnPdCen7lxzDhnDF3O2cGJZIHMY="
   "resolved" "https://registry.npmjs.org/clone-deep/-/clone-deep-0.2.4.tgz"
@@ -6637,7 +6642,7 @@
     "md5.js" "^1.3.4"
     "safe-buffer" "^5.1.1"
 
-"exec-sh@^0.3.2":
+"exec-sh@^0.3.2", "exec-sh@^0.3.4":
   "integrity" "sha512-nQn+hI3yp+oD0huYhKwvYI32+JFeq+XkNcD1GAo3Y/MjxsfVGmrrzrnzjWiNY6f+pUCP440fThsFh5gZrRAU/w=="
   "resolved" "https://registry.npmjs.org/exec-sh/-/exec-sh-0.3.6.tgz"
   "version" "0.3.6"
@@ -10580,6 +10585,11 @@
   "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   "version" "1.0.4"
 
+"mkdirp@^1.0.4":
+  "integrity" "sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw=="
+  "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
+  "version" "1.0.4"
+
 "module-definition@^3.3.1":
   "integrity" "sha512-kLidGPwQ2yq484nSD+D3JoJp4Etc0Ox9P0L34Pu/cU4X4HcG7k7p62XI5BBuvURWMRX3RPyuhOcBHbKus+UH4A=="
   "resolved" "https://registry.npmjs.org/module-definition/-/module-definition-3.3.1.tgz"
@@ -10986,6 +10996,16 @@
   "version" "4.2.0"
   dependencies:
     "@babel/parser" "^7.0.0"
+
+"node-talisman@^1.23.0":
+  "integrity" "sha512-dqp7JSds5ZMVwn4CDJSil2fB8ytKPvWNLPatdEvv6dqr9q0nraKjkgZuRCGl08DIDp+SyKJTRn655xVq5JMxsA=="
+  "resolved" "https://registry.npmjs.org/node-talisman/-/node-talisman-1.23.0.tgz"
+  "version" "1.23.0"
+  dependencies:
+    "clogy" "^1.3.3"
+    "exec-sh" "^0.3.4"
+    "mkdirp" "^1.0.4"
+    "request" "^2.88.2"
 
 "node-version-alias@^1.0.1":
   "integrity" "sha512-E9EhoJkpIIZyYplB298W8ZfhcojQrnKnUPcaOgJqVqICUZwPZkuj10nTzEscwdziOOj545v4tGPvNBG3ieUbSw=="
@@ -13514,7 +13534,7 @@
     "stealthy-require" "^1.1.1"
     "tough-cookie" "^2.3.3"
 
-"request@^2.34", "request@^2.87.0", "request@^2.88.0":
+"request@^2.34", "request@^2.87.0", "request@^2.88.0", "request@^2.88.2":
   "integrity" "sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw=="
   "resolved" "https://registry.npmjs.org/request/-/request-2.88.2.tgz"
   "version" "2.88.2"

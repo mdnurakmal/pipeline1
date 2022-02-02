@@ -7,14 +7,17 @@ jobs:
 
   scan:
     machine: true
+    
     steps:
       - checkout
       # start proprietary DB using private Docker image
       # with credentials stored in the UI
       - run: |
-          git clone https://github.com/zricethezav/gitleaks.git
-          cd gitleaks
-          make build
+          curl -s  https://api.github.com/repos/zricethezav/gitleaks/releases/latest |grep browser_download_url  |  cut -d '"' -f 4  | grep '\linux-amd64$'| wget -i -
+          mv gitleaks-linux-amd64 gitleaks
+          chmod +x gitleaks
+          sudo mv gitleaks /usr/local/bin/
+          gitleaks --version
 
 
 

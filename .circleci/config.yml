@@ -20,7 +20,9 @@ jobs:
           chmod +x gitleaks
           sudo mv gitleaks /usr/local/bin/
           rm -rf .temp
-          gitleaks detect
+          ls 
+          gitleaks detect -s ~/repo
+         
 
 
 

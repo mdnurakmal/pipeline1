@@ -7,7 +7,7 @@ jobs:
 
   scan:
     docker:
-      -image: 'quay.io/upennlibraries/gitleaks:v1.23.0'
+      - image: 'quay.io/upennlibraries/gitleaks:v1.23.0'
     
     working_directory: ~/repo
 

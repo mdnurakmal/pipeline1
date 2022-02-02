@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.0
   codecov: codecov/codecov@3.2.2
-  git-secret: lyvly/git-secret@0.1.0
+  gitleaks: upenn-libraries/gitleaks@1.0.0
 jobs:
 
   build:
@@ -47,7 +47,9 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - git-secret/install_and_decrypt ~/repo
+      - gitleaks/check_local:
+          image: 'quay.io/upennlibraries/gitleaks:v1.23.0'
+          options: '--redact --repo-config'
       - build:
           requires:
               - git-secret/install_and_decrypt ~/repo

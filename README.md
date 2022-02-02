@@ -4,8 +4,8 @@
 
 [![codecov](https://codecov.io/gh/mdnurakmal/react-cicd-1/branch/main/graph/badge.svg?token=U03ASER0MO)](https://codecov.io/gh/mdnurakmal/pipeline1)
 [![CircleCI](https://circleci.com/gh/mdnurakmal/pipeline1/tree/main.svg?style=svg)](https://circleci.com/gh/mdnurakmal/pipeline1/tree/main)
-[![Known Vulnerabilities](https://snyk.io/test/github/mdnurakmal/pipeline1/tree/main/badge.svg)](https://snyk.io/test/github/mdnurakmal/pipeline1)
- [![BCH compliance](https://bettercodehub.com/edge/badge/mdnurakmal/pipeline1?branch=main)]
+[![Known Vulnerabilities](https://snyk.io/test/github/mdnurakmal/pipeline1/badge.svg)](https://snyk.io/test/github/mdnurakmal/pipeline1)
+[![BCH compliance](https://bettercodehub.com/edge/badge/mdnurakmal/pipeline1?branch=main)]
 
 * IDE - Visual Studio Code
 * IDE Scanner - Snyk Vulnerability Scanner

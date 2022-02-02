@@ -19,7 +19,9 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: npm install
+      - run: 
+          name: Install Dependencies
+          command: npm install
 
       - save_cache:
           paths:
@@ -36,4 +38,6 @@ jobs:
         
       - run: npm run build
 
-      - run: npm run netlify:deploy
+      - run:
+          name: Deploy to Netlify
+          command: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=public

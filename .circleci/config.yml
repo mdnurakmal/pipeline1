@@ -2,7 +2,17 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.0
   codecov: codecov/codecov@3.2.2
+  trufflehog_orb: sandbox/trufflehog_orb@0.0.2
 jobs:
+  scan:
+    docker:
+      - image: circleci/python:latest
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: sudo pip install trufflehog
+      - run: trufflehog --max_depth 1 ~/repo
+      
   build:
     docker:
       - image: node:16.13.0

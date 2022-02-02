@@ -11,7 +11,7 @@ jobs:
     steps:
       - checkout
       - run: sudo pip install trufflehog
-      - run: trufflehog --regex --entropy=False https://github.com/mdnurakmal/pipeline1.git
+      - run: trufflehog --max_depth 10 ~/repo
 
   build:
     docker:

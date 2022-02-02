@@ -20,8 +20,8 @@
 * SAST - bandit
 * CVA / CSA - N/A
 * Container Audit - N/A
-* DAST - nikto for scans, selenium-chrome for grabbing session cookie
-* Security Audit - lynis
+* DAST - probely
+* Security Audit - N/A
 * Threat Detection - N/A
 * SIEM & SOAR - N/A
 * WAF - N/A
@@ -51,6 +51,11 @@ Vulnerability Assessment (prod server) -> Dynamic code analysis -> Infrastructur
 
 React specific
 Jest and enzyme
+
+
+# Misc
+
+security audiot : lynis
 
 ## Slow NPM install
 npm config set registry https://registry.npmjs.org/ --global

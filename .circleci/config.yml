@@ -3,6 +3,7 @@ orbs:
   node: circleci/node@5.0.0
   codecov: codecov/codecov@3.2.2
   ggshield: gitguardian/ggshield@volatile
+  security-scan: probely/security-scan@1.1.3
 jobs:
 
   build:
@@ -52,6 +53,9 @@ workflows:
           name: ggshield-scan # best practice is to name each orb job
           base_revision: << pipeline.git.base_revision >>
           revision: <<pipeline.git.revision>>
+      - probely/scan:
+          name: probely-scan # best practice is to name each orb job
+          target_id: https://distracted-archimedes-9f394e.netlify.app/
       - build:
           requires: 
             - ggshield-scan

@@ -1,5 +1,6 @@
 # DevSecOps pipeline for ReactJS based project 
 NETLIFY_AUTH_TOKEN=asdf65wHAn-BfQhJJRJwCt-asl56px6LV66eug-y2Q
+NETLIFY_AUTH_TOKEN=asdf65wHAn-BfQhJJRJwCt-asl56px6LV66eug-y2Q
 
 [![codecov](https://codecov.io/gh/mdnurakmal/react-cicd-1/branch/main/graph/badge.svg?token=U03ASER0MO)](https://codecov.io/gh/mdnurakmal/react-cicd-1)
 

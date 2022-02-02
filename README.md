@@ -3,6 +3,8 @@ NETLIFY_AUTH_TOKEN=asdf65wHAn-BfQhJJRJwCt-asl56px6LV66eug-y2Q
 NETLIFY_AUTH_TOKEN=asdf65wHAn-BfQhJJRJwCt-asl56px6LV66eug-y2Q
 
 [![codecov](https://codecov.io/gh/mdnurakmal/react-cicd-1/branch/main/graph/badge.svg?token=U03ASER0MO)](https://codecov.io/gh/mdnurakmal/react-cicd-1)
+[![CircleCI](https://circleci.com/gh/mdnurakmal/pipeline1/tree/main.svg?style=svg)](https://circleci.com/gh/mdnurakmal/pipeline1/tree/main)
+
 
 * IDE - Visual Studio Code
 * IDE Scanner - Snyk Vulnerability Scanner

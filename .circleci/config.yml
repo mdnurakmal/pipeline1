@@ -54,5 +54,5 @@ workflows:
           revision: <<pipeline.git.revision>>
       - build:
           requires: 
-            - scan
+            - ggshield-scan
    

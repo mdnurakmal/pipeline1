@@ -4,9 +4,9 @@ orbs:
   codecov: codecov/codecov@3.2.2
   gitleaks: upenn-libraries/gitleaks@1.0.0
   workflows:
-  check_for_secrets:
-    jobs:
-      - gitleaks/check_local
+    check_for_secrets:
+      jobs:
+        - gitleaks/check_local
 jobs:
 
   build:

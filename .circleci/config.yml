@@ -7,13 +7,12 @@ jobs:
 
   scan:
     docker:
-      - image: 'quay.io/upennlibraries/gitleaks:v1.23.0'
-    
+      - image: circleci/python:latest
     working_directory: ~/repo
-
     steps:
       - checkout
-      - gitleaks/check_local --path .
+      - run: pip install pre-commit
+      - run: pre-commit run --all-files
 
 
   build:
@@ -64,5 +63,6 @@ workflows:
   build_and_test:
     jobs:
       - scan
-      - build
+      - build:
+          require: scan
    

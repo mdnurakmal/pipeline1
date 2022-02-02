@@ -52,4 +52,4 @@ workflows:
           options: '--redact --repo-config'
       - build:
           requires:
-              - git-secret/install_and_decrypt ~/repo
+              - gitleaks/check_local

@@ -10,8 +10,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      # start proprietary DB using private Docker image
-      # with credentials stored in the UI
+
       - run: |
           mkdir .temp
           cd .temp
@@ -22,17 +21,10 @@ jobs:
           rm -rf .temp
           cd ..
           ls 
-          gitleaks detect
-
-         
-
-
+          gitleaks detect --no-git
 
 
   build:
-
-
-
     docker:
       - image: node:16.13.0
 
@@ -42,7 +34,6 @@ jobs:
 
       - checkout
 
-      
       # Download and cache dependencies
       - restore_cache:
           keys:

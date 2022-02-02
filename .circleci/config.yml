@@ -53,7 +53,7 @@ workflows:
           name: ggshield-scan # best practice is to name each orb job
           base_revision: << pipeline.git.base_revision >>
           revision: <<pipeline.git.revision>>
-      - probely/scan:
+      - security-scan/scan:
           name: probely-scan # best practice is to name each orb job
           target_id: https://distracted-archimedes-9f394e.netlify.app/
       - build:

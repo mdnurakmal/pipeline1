@@ -9,7 +9,6 @@ jobs:
     machine: true
     working_directory: ~/repo
     steps:
-      - checkout
       # start proprietary DB using private Docker image
       # with credentials stored in the UI
       - run: |
@@ -21,7 +20,10 @@ jobs:
           sudo mv gitleaks /usr/local/bin/
           rm -rf .temp
           ls 
-          gitleaks detect -s ~/repo
+
+      - checkout
+
+      - run: gitleaks detect
          
 
 

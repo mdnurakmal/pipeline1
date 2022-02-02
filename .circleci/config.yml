@@ -7,7 +7,7 @@ jobs:
 
   scan:
     - gitleaks/check_local
-        path: ~/repo
+
 
   build:
 
